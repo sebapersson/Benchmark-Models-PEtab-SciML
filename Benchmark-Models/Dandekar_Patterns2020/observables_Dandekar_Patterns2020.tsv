@@ -1,0 +1,3 @@
+observableId	observableFormula	noiseFormula	noiseDistribution
+obs_infected	log(abs(I + T))	1	normal
+obs_recovered	log(abs(R))	1	normal

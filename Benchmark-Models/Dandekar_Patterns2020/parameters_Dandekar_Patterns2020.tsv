@@ -1,0 +1,5 @@
+parameterId	lowerBound	upperBound	nominalValue	estimate
+beta	0.0	10.0	0.2237607420105867	true
+gamma	0.0	10.0	0.01882326045857552	true
+delta	0.0	10.0	0.004798195910307556	true
+net1_ps	-Inf	Inf	0.0	true

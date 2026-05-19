@@ -1,0 +1,5 @@
+targetId	targetValue
+net1_input1	S/N
+net1_input2	I/N
+net1_input3	R/N
+quarantine_rate	net1_output1
