@@ -1,0 +1,26 @@
+format_version: 2.0.0
+parameter_files:
+  - parameters_Ko_NeurIPS2023.tsv
+model_files:
+  model:
+    location: model_Ko_NeurIPS2023.xml
+    language: sbml
+measurement_files:
+  - measurements_validation_Ko_NeurIPS2023.tsv
+observable_files:
+  - observables_Ko_NeurIPS2023.tsv
+mapping_files:
+  - mapping_Ko_NeurIPS2023.tsv
+extensions:
+  sciml:
+    version: 0.1.0
+    required: true
+    neural_nets:
+      net1:
+        location: net1_Ko_NeurIPS2023.yaml
+        format: yaml
+        pre_initialization: false
+    hybridization_files:
+      - hybridization_Ko_NeurIPS2023.tsv
+    array_files:
+      - ps_net1_Ko_NeurIPS2023.hdf5
