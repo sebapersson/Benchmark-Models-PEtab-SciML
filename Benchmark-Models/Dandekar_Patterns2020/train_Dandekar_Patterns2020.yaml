@@ -1,0 +1,26 @@
+format_version: 2.0.0
+model_files:
+  model:
+    location: model_Dandekar_Patterns2020.xml
+    language: sbml
+parameter_files:
+  - parameters_Dandekar_Patterns2020.tsv
+measurement_files:
+  - measurements_train_Dandekar_Patterns2020.tsv
+observable_files:
+  - observables_Dandekar_Patterns2020.tsv
+mapping_files:
+  - mapping_Dandekar_Patterns2020.tsv
+extensions:
+  sciml:
+    version: 0.1.0
+    required: true
+    neural_nets:
+      net1:
+        location: net1_Dandekar_Patterns2020.yaml
+        format: yaml
+        pre_initialization: false
+    hybridization_files:
+      - hybridization_Dandekar_Patterns2020.tsv
+    array_files:
+      - net1_ps_Dandekar_Patterns2020.hdf5
