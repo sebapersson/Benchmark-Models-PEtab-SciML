@@ -1,7 +1,7 @@
 targetId	targetValue
-net1_input1	omega1
-net1_input2	omega2
-net1_input3	theta1
-net1_input4	theta2
+net1_input1	theta1
+net1_input2	theta2
+net1_input3	omega1
+net1_input4	omega2
 acceleration1	net1_output1
 acceleration2	net1_output2

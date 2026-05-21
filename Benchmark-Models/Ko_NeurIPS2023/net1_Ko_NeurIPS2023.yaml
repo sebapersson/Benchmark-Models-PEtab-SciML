@@ -32,9 +32,9 @@ forward:
   args:
   - input_1
   kwargs: {}
-- name: silu
+- name: gelu
   op: call_function
-  target: silu
+  target: gelu
   args:
   - layer1
   kwargs:
@@ -43,11 +43,11 @@ forward:
   op: call_module
   target: layer2
   args:
-  - silu
+  - gelu
   kwargs: {}
-- name: silu_1
+- name: gelu_1
   op: call_function
-  target: silu
+  target: gelu
   args:
   - layer2
   kwargs:
@@ -56,7 +56,7 @@ forward:
   op: call_module
   target: layer3
   args:
-  - silu_1
+  - gelu_1
   kwargs: {}
 - name: output
   op: output

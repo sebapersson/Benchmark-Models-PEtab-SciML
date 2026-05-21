@@ -40,25 +40,25 @@
     <listOfParameters>
       <parameter id="theta1"
                  name="theta1"
-                 value="-1.13"
+                 value="-1.1336150169372559"
                  units="dimensionless"
                  constant="false"/>
 
       <parameter id="theta2"
                  name="theta2"
-                 value="-1.30"
+                 value="-1.3008047342300415"
                  units="dimensionless"
                  constant="false"/>
 
       <parameter id="omega1"
                  name="omega1"
-                 value="-0.53"
+                 value="-0.5385388135910034"
                  units="dimensionless"
                  constant="false"/>
 
       <parameter id="omega2"
                  name="omega2"
-                 value="-6.15"
+                 value="-6.1550583839416495"
                  units="dimensionless"
                  constant="false"/>
 
