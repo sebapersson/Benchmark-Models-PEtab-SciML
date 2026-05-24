@@ -3,12 +3,6 @@
 A susceptible-infected-recovered (SIR) universal differential equation (UDE) model of the
 early COVID-19 outbreak in the United Kingdom [1].
 
-## Model statistics
-
-| Hybridization | Est. params | Mech. params | ML params | ODE states |
-| ------------- | ----------: | -----------: | --------: | ---------: |
-| UDE           |          54 |            3 |        51 |          4 |
-
 ## Implementation details
 
 The implementation closely follows the original publication, with two differences.
