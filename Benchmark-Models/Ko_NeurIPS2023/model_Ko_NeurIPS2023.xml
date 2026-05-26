@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core"
+      level="3"
+      version="2">
+  <model id="Ko_NeurIPS2023"
+         name="Ko_NeurIPS2023"
+         timeUnits="second">
+
+    <notes>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p>
+          Second-order neural ODE model of double-pendulum dynamics, based on
+          Ko et al., NeurIPS 2023. The angular accelerations are supplied by
+          the neural-network outputs through the PEtab-SciML hybridization table.
+        </p>
+      </body>
+    </notes>
+
+    <annotation>
+      <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+               xmlns:bqmodel="http://biomodels.net/model-qualifiers/">
+        <rdf:Description rdf:about="#Ko_NeurIPS2023">
+          <bqmodel:isDescribedBy>
+            <rdf:Bag>
+              <rdf:li rdf:resource="https://openreview.net/forum?id=rUFckPrzXR"/>
+            </rdf:Bag>
+          </bqmodel:isDescribedBy>
+        </rdf:Description>
+      </rdf:RDF>
+    </annotation>
+
+    <listOfUnitDefinitions>
+      <unitDefinition id="per_second2" name="per second squared">
+        <listOfUnits>
+          <unit kind="second" exponent="-2" scale="0" multiplier="1"/>
+        </listOfUnits>
+      </unitDefinition>
+    </listOfUnitDefinitions>
+
+    <listOfParameters>
+      <parameter id="theta1"
+                 name="theta1"
+                 value="-1.1336150169372559"
+                 units="dimensionless"
+                 constant="false"/>
+
+      <parameter id="theta2"
+                 name="theta2"
+                 value="-1.3008047342300415"
+                 units="dimensionless"
+                 constant="false"/>
+
+      <parameter id="omega1"
+                 name="omega1"
+                 value="-0.5385388135910034"
+                 units="dimensionless"
+                 constant="false"/>
+
+      <parameter id="omega2"
+                 name="omega2"
+                 value="-6.1550583839416495"
+                 units="dimensionless"
+                 constant="false"/>
+
+      <parameter id="acceleration1"
+                 name="neural_network_angular_acceleration_1"
+                 units="per_second2"
+                 constant="true"/>
+
+      <parameter id="acceleration2"
+                 name="neural_network_angular_acceleration_2"
+                 units="per_second2"
+                 constant="true"/>
+    </listOfParameters>
+
+    <listOfRules>
+      <rateRule variable="theta1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> omega1 </ci>
+        </math>
+      </rateRule>
+
+      <rateRule variable="theta2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> omega2 </ci>
+        </math>
+      </rateRule>
+
+      <rateRule variable="omega1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> acceleration1 </ci>
+        </math>
+      </rateRule>
+
+      <rateRule variable="omega2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> acceleration2 </ci>
+        </math>
+      </rateRule>
+    </listOfRules>
+  </model>
+</sbml>

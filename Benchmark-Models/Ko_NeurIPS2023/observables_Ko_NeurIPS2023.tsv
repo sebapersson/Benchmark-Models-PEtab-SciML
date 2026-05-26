@@ -1,0 +1,5 @@
+observableId	observableFormula	noiseFormula	noiseDistribution
+obs_theta1	theta1	1	normal
+obs_theta2	theta2	1	normal
+obs_omega1	omega1	1	normal
+obs_omega2	omega2	1	normal
