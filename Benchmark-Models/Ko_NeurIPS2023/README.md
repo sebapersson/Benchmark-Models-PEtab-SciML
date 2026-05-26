@@ -9,7 +9,7 @@ The implementation follows the double-pendulum benchmark from the original publi
 two differences.
 
 First, a 70/30 split is used for training and validation data instead of the 50/50 split
-used in the original study, as the latter led to not correlation between training and
+used in the original study, as the latter led to non-correlation between training and
 validation loss.
 
 Second, the original publication scales the time span by the maximum training time. This
