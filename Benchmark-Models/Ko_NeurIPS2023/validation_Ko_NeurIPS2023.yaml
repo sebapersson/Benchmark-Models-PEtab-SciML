@@ -15,7 +15,7 @@ extensions:
   sciml:
     version: 0.1.0
     required: true
-    neural_nets:
+    neural_networks:
       net1:
         location: net1_Ko_NeurIPS2023.yaml
         format: yaml
