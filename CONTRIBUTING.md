@@ -28,8 +28,8 @@ To add a new benchmark model, please make sure that the following checklist is f
   - [ ] The SBML model `id` and `name` attributes match the problem ID.
 - [ ] The PEtab-SciML files are included.
   - [ ] The PEtab-SciML problem is valid according to the PEtab-SciML linter.
-  - [ ] An `expected.yaml` file is provided with the expected likelihood/objective function
-        value for the provided nominal parameter values.
+  - [ ] A `metadata/expected.yaml` file is provided with the expected likelihood/objective
+        function value for the provided nominal parameter values.
 - [ ] The main repository README has been updated.
   - [ ] The model is included in the overview table.
   - [ ] The overview table includes the model ID, hybridization form, number of estimated
