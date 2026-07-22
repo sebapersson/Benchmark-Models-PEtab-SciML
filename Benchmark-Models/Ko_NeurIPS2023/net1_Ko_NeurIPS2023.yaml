@@ -37,8 +37,7 @@ forward:
   target: gelu
   args:
   - layer1
-  kwargs:
-    inplace: false
+  kwargs: {}
 - name: layer2
   op: call_module
   target: layer2
@@ -50,8 +49,7 @@ forward:
   target: gelu
   args:
   - layer2
-  kwargs:
-    inplace: false
+  kwargs: {}
 - name: layer3
   op: call_module
   target: layer3

@@ -31,8 +31,7 @@ forward:
   target: silu
   args:
   - layer1
-  kwargs:
-    inplace: false
+  kwargs: {}
 - name: layer2
   op: call_module
   target: layer2
