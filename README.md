@@ -12,8 +12,8 @@ for details.
 ## Overview
 
 Benchmark models are available in [Benchmark-Models](Benchmark-Models). In addition to the
-PEtab-SciML problem files, each model directory contains an `expected.yaml` file with
-expected loss or likelihood values for the provided parameter values.
+PEtab-SciML problem files, each model directory contains a `metadata/expected.yaml` file
+with expected loss or likelihood values for the provided parameter values.
 
 Current models include:
 
