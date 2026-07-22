@@ -1,0 +1,27 @@
+name: quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest pyyaml
+          # TODO switch to pypi
+          python -m pip install "petab_sciml @ git+https://github.com/PEtab-dev/petab_sciml.git"
+          python -m pip install "petab @ git+https://github.com/PEtab-dev/libpetab-python.git"
+
+      - name: Lint problems
+        run: pytest tests/test_lint_problems.py -v
