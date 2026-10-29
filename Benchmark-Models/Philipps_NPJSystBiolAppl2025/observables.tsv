@@ -1,0 +1,4 @@
+observableId	observableFormula	noiseFormula	noiseDistribution
+pSTAT5A_rel	(100 * pApB + 200 * pApA * specC17) / (pApB + STAT5A * specC17 + 2 * pApA * specC17)	sd_pSTAT5A_rel	normal
+pSTAT5B_rel	-(100 * pApB - 200 * pBpB * (specC17 - 1)) / ((STAT5B * (specC17 - 1) - pApB) + 2 * pBpB * (specC17 - 1))	sd_pSTAT5B_rel	normal
+rSTAT5A_rel	net1_output1	sd_rSTAT5A_rel	normal

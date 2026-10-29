@@ -1,0 +1,13 @@
+parameterId	lowerBound	upperBound	nominalValue	estimate
+Epo_degradation_BaF3	1e-05	100000.0	0.04263282440697099	true
+k_imp_homo	1e-05	100000.0	0.014162160850809525	true
+k_imp_hetero	1e-05	100000.0	0.01289559322146903	true
+k_exp_homo	1e-05	100000.0	0.04221502366709576	true
+k_exp_hetero	1e-05	100000.0	0.00030746048834582197	true
+k_phos	1e-05	100000.0	10898.634744751396	true
+sd_pSTAT5A_rel	1e-05	100000.0	3.7945185418158975	true
+sd_pSTAT5B_rel	1e-05	100000.0	5.9523925163266	true
+sd_rSTAT5A_rel	1e-05	100000.0	0.4320281363748728	true
+ratio	0.0	5.0	0.693	false
+specC17	-5.0	5.0	0.107	false
+net1_ps	-inf	inf	array	true
