@@ -1,0 +1,9 @@
+targetId	targetValue
+net1_input1	STAT5A
+net1_input2	STAT5B
+net1_input3	pApA
+net1_input4	pApB
+net1_input5	pBpB
+net1_input6	nucpApA
+net1_input7	nucpApB
+net1_input8	nucpBpB

@@ -17,10 +17,11 @@ with expected loss or likelihood values for the provided parameter values.
 
 Current models include:
 
-| Model                                                           | Hybridization | Est. params | Mech. params | ML params | ODE states |
-| --------------------------------------------------------------- | ------------- | ----------: | -----------: | --------: | ---------: |
-| [Dandekar_Patterns2020](Benchmark-Models/Dandekar_Patterns2020) | UDE           |          54 |            3 |        51 |          4 |
-| [Ko_NeurIPS2023](Benchmark-Models/Ko_NeurIPS2023)               | Neural ODE    |        2902 |            0 |      2902 |          4 |
+| Model                                                                         | Hybridization    | Est. params | Mech. params | ML params | ODE states |
+| ----------------------------------------------------------------------------- | ---------------- | ----------: | -----------: | --------: | ---------: |
+| [Dandekar_Patterns2020](Benchmark-Models/Dandekar_Patterns2020)               | UDE              |          54 |            3 |        51 |          4 |
+| [Ko_NeurIPS2023](Benchmark-Models/Ko_NeurIPS2023)                             | Neural ODE       |        2902 |            0 |      2902 |          4 |
+| [Philipps_NPJSystBiolAppl2025](Benchmark-Models/Philipps_NPJSystBiolAppl2025) | UDE (observable) |         110 |            9 |       101 |          8 |
 
 ## Installation
 
